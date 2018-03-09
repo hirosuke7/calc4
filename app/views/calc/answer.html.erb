@@ -2,7 +2,7 @@
 <%= form_tag("/calc/answer") do %>
 
 
-値1:<input type=number name="first">
+値1:<input type=number name="first" value=<%=@first %>>
 
 
 <select name="transaction">
@@ -12,7 +12,7 @@
 <option value=4>÷</option>
 </select>
 
-値2:<input type=number name="second">
+値2:<input type=number name="second" value=<%=@second %> >
 
 =
 

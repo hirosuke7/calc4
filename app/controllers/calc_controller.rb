@@ -8,23 +8,23 @@ class CalcController < ApplicationController
   def answer
       @first = params[:first].to_i
       @second = params[:second].to_i
-      @transaction = params[:transaction]
+      @transaction = params[:transaction].to_i
 
 
       if @transaction == 1
-        @result.to_s = @first + @second
+        @result = @first + @second
 
 
       elsif @transaction == 2
-        @result.to_s = @first - @second
+        @result = @first - @second
 
 
       elsif @transaction == 3
-        @result.to_s = @first * @second
+        @result = @first * @second
 
 
       elsif @transaction == 4
-        @result.to_s = @first / @second
+        @result = @first / @second
       end
 
   end
