@@ -1,0 +1,25 @@
+
+<%= form_tag("/calc/answer") do %>
+
+値1:<input type=number name="first">
+
+
+<select name="transaction">
+<option value=1>＋</option>
+<option value=2>−</option>
+<option value=3>×</option>
+<option value=4>÷</option>
+</select>
+
+値2:<input type=number name="second">
+
+=
+
+<textarea></textarea>
+
+<br>
+<br>
+<br>
+<input type="submit" value="計算">
+
+<% end %>
